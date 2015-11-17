@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+
+<head>
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.css"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta http-equiv="content-type" content="text/php; charset=utf-8" />
+  <title>Journal</title>
+</head>
+
+<body>
+
+
+
+  <div class="container">
+    <div class="heading">
+      <h2>Javascript</h2>
+      <p>Pure Javascript Typewriter App </p>
+    </div>
+
+    <div class="project-container">
+      <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <h3 id="header-journal-text"> </h3>
+        <p id="paragraph-journal-text"> </p>
+
+      </div>
+
+      <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="right-Journal">
+          <h2 id="journal-logo">
+            <span style="color:rgba(64, 150, 238, 1);">re</span>live journal</h2>
+
+          <textarea id="journal-text" name="one" rows="4" placeholder="Your message goes here :) "></textarea>
+          <div id="display-text"> </div>
+          <br/>
+
+          <div id="btn-holder">
+            <button class="journal-btn" id="playBtn" onclick="toggleWriteText('display-text', 'playBtn')">Play Text
+            </button>
+            <button class="journal-btn" id="resetBtn" onclick="reset()">
+              Clear</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- <script src="bootstrap.js"></script> -->
+  <script src="keycodemap.js"></script>
+  <script src="journal.js"></script>
+
+  <script>
+    document.getElementById("journal-text").focus();
+  </script>
+
+
+</body>
+
+</html>
